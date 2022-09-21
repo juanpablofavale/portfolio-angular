@@ -53,8 +53,20 @@
             "logo": "./assets/img/Typescript.svg.png"
         },
         {
+            "nombre": "Angular",
+            "logo": "./assets/img/angular.png"
+        },
+        {
+            "nombre": "mySql",
+            "logo": "./assets/img/mysql.png"
+        },
+        {
             "nombre": "Java",
             "logo": "./assets/img/Java.png"
+        },
+        {
+            "nombre": "Spring Boot",
+            "logo": "./assets/img/spring_boot.png"
         }
     ],
     "proyectos": [
