@@ -1,0 +1,22 @@
+<section id="experiencia">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mb-3">
+        <h1>Experiencia
+        </h1>
+      </div>
+    </div>
+    <div class="row p-3">
+      <ul>
+        <li *ngFor="let experiencia of experienciaLista">
+          <div class="col text-center mb-3">
+            <img [src]="experiencia.logo" alt="" class="img-habil">
+            <h4>{{experiencia.empresa}}</h4>
+            <h6>{{experiencia.trabajo}}</h6>
+            <b>{{experiencia.fecha}}</b>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

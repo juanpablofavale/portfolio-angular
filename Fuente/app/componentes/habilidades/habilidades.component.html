@@ -1,0 +1,19 @@
+<section id="habilidades">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mb-3">
+        <h1>Habilidades</h1>
+      </div>
+    </div>
+    <div class="row">
+      <ul>
+        <li *ngFor="let habilidades of habilidadesLista">
+          <div class="col text-center mb-3">
+            <h3>{{habilidades.nombre}}</h3>
+            <img [src]="habilidades.logo" alt="" class="img-habil">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
