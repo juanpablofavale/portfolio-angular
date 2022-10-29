@@ -1,2 +1,5 @@
 # portfolio-angular
-Prueba de Portfolio en Angular
+
+Primera Prueba de Portfolio SPA en Angular
+
+Archivos fuente en carpeta fuente
