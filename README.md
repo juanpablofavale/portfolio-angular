@@ -7,5 +7,5 @@ Archivos fuente en carpeta fuente
 Enlace funcional:
 https://juanpablofavale.github.io/portfolio-angular/
 
-Repositorio de la maqueta estatica:
+Repositorio de la maqueta estatica original:
 https://github.com/juanpablofavale/portfolio-maquetado/blob/master/README.md
