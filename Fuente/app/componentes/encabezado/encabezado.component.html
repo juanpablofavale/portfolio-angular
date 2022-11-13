@@ -1,34 +1,29 @@
-<nav class="navbar navbar-expand-lg fixed-top">
+
+<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
-      <img src="./assets/img/AP (2).png" alt="" class="img-logo">
-    </a>
-    <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <img id="logo" src="./assets/img/AP-logo1.png" alt="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a routerLink="/">Inicio</a>
+      <ul class="navbar-nav m-4">
+        <li class="nav-item m-auto">
+          <a routerLink="/" class="nav-link active">Inicio</a>
         </li>
-        <li class="nav-item">
-          <a routerLink="/experiencia">Experiencia</a>
+        <li class="nav-item m-auto">
+          <a routerLink="/experiencia" class="nav-link">Experiencia</a>
         </li>
-        <li class="nav-item">
-          <a routerLink="/estudios">Estudios</a>
+        <li class="nav-item m-auto">
+          <a routerLink="/estudios" class="nav-link">Estudios</a>
         </li>
-        <li class="nav-item">
-          <a routerLink="/habilidades">Habilidades</a>
+        <li class="nav-item m-auto">
+          <a routerLink="/habilidades" class="nav-link">Habilidades</a>
         </li>
-        <li class="nav-item">
-          <a routerLink="/proyectos">Proyectos</a>
+        <li class="nav-item m-auto">
+          <a routerLink="/proyectos" class="nav-link">Proyectos</a>
         </li>
       </ul>
-      <div class="contenedor-botones">
-        <button class="btn btn-outline-warning ms-auto me-2">Iniciar Sesion</button>
-        <button onclick="myFunction()" class="btn btn-outline-warning">Tema</button>
-      </div>
-    </div>
+      <a class="login" href="#">Iniciar Sesion</a>
+  </div>
   </div>
 </nav>

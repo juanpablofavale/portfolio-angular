@@ -1,165 +1,260 @@
-* {
+:root{
+    /* DARK */
+    --fondo-dark-pri: #1d3538;
+    --fondo-dark-sec: #011214;
+    --texto-dark-pri: #ddd;
+    --texto-dark-sec: #16f5fd;
+    --sombra-dark: #2ebaeb;
+
+    /* LIGHT */
+    --fondo-light-pri: #75dbfd;
+    --fondo-light-sec: #062b30;
+    --texto-light-pri: #000000;
+    --texto-light-sec: #ddd;
+    --sombra-light: #ffffff;
+
+    /* Dark BackUp
+    --fondo-dark-pri: #122224;
+    --fondo-dark-sec: #011214;
+    --texto-dark-pri: #ddd;
+    --texto-dark-sec: #16f5fd;
+    --sombra-dark: #2ebaeb;
+    */
+
+    /* Light BackUp
+    --fondo-light-pri: #75dbfd;
+    --fondo-light-sec: #062b30;
+    --texto-light-pri: #000000;
+    --texto-light-sec: #ddd;
+    --sombra-light: #ffffff;
+    */
+}
+
+*{
     margin: 0;
     padding: 0;
-    transition: background 0.3s linear;
+    box-sizing: border-box;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    margin-top: 100px;
-    background-color: #424242;
-    color: antiquewhite;
-}
-
-/* MODO CLARO */
-
-.modo-claro body{
-    background-color: #a5a165;
-}
-
-.modo-claro nav, .modo-claro footer{
-    background-color: #9c8b78;
-    color: #000;
-    box-shadow: 0 15px 100px #fdb316;
-}
-
-.modo-claro a {
-    color: #000;
-}
-
-.modo-claro nav a:hover {
-    color: #fdb316;
-}
-
-.modo-claro section {
-    background-color: #a5a165;
-    color: #000;
-}
-
-.modo-claro #habilidades li:hover{
-    transition: all linear .25s;
-    transform: translatey(-10px);
-    box-shadow: 0px 10px 35px #fdb316;
-}
-
-.modo-claro .nav-item a:hover {
-    color: #fdb316;
+body{
+    background-color: var(--fondo-light-pri);
+    font-size: 20px;
 }
 
 /* HEADER */
 
-nav {
-    box-shadow: 0 2px 25px white;
-    background-color: #202020;
+header a{
+    color: var(--texto-light-pri) !important;
+    font-weight: bold !important;
 }
 
-.nav-item a {
-    color: antiquewhite;
-    text-decoration: none;
-    padding: 0 10px;
+header button.navbar-toggler{
+    background-color: var(--texto-light-sec) !important;
 }
 
-.nav-item a:hover {
-    color: #2ebbeb;
+header nav{
+    background: linear-gradient(0, var(--fondo-light-pri), var(--fondo-light-sec));
 }
 
-nav li{
-    font-size: 24px;
-    margin: 5px;
+header a:hover{
+    color: var(--texto-light-sec) !important;
+    transform: translate(0, -3px);
+    transition: 0.5s;
+    text-shadow: 1px 1px 10px var(--sombra-light);
+}
+
+.login{
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+#logo{
+    width: 150px;
 }
 
 /* MAIN */
 
-.img-banner {
+.img-banner{
     width: 100%;
-    min-height: 190px;
+    height: 400px;
+    border-radius: 1%;
+    margin: auto;
 }
 
-.img-habil {
-    width: 100px;
+.img-perfil{
+    border-radius: 50%;
+    width: 250px;
+    margin: auto;
 }
 
-.img-logo {
-    width: 150px;
-}
-
-.img-perfil {
-    width: 200px;
-}
-
-.img-proy {
+.perfil{
+    position: absolute;
+    text-align: center;
+    top: 320px;
     width: 100%;
-    max-width: 800px;
-    border-style: solid;
-    border-color: #2ebbeb;
-    border-radius: 3%;
 }
 
-.con-acerca {
-    position: relative;
-    top: -100px;
-    width: 90%;
-}
-
-ul {
-    list-style: none;
+section{
+    color: var(--texto-light-pri);
+    margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 section ul{
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    width: 60%;
+    gap: 10px;
 }
 
-#estudios li, #experiencia li{
+section .card{
     width: 250px;
-    height: 300px;
-    padding: 10px;
-/*    border: 1px solid antiquewhite;
-    border-radius: 5px;
-    box-shadow: 5px 5px 15px #2ebbeb;*/
+    background-color: var(--fondo-light-pri);
+    color: var(--texto-light-pri);
+    border: none;
+    text-align: center;
 }
 
-#habilidades li{
-    padding: 7px;
-    border-radius: 7px;
+.card img, .img-habil{
+    width: 250px;
+    height: 200px;
+    object-fit:scale-down;
 }
 
-#habilidades li:hover{
-    transition: all linear .25s;
-    transform: translatey(-10px);
-    box-shadow: 0px 10px 35px #2ebbeb;
+.img-proy{
+    width: 50%;
 }
 
-#estudios img{
-    height: 100px;
-    object-fit: cover;
+/* GENERAL */
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* FOOTER */
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 -2px 25px white;
-    background-color: #202020;
+#tema{
+    cursor: pointer;
 }
 
-@media (min-width: 768px){
-    #acerca-texto{
-        margin-top: 140px;
-        padding: 15px;
+.sol{
+    display: none;
+}
+
+footer a, .luna{
+    color: var(--texto-light-pri);
+}
+
+footer a:hover, .luna:hover{
+    color: var(--texto-light-sec) !important;
+    transition: 0.5s;
+    text-shadow: 0px 0px 15px var(--sombra-light);
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+}
+
+footer ul{
+    background-color: var(--fondo-light-sec);
+    background: linear-gradient(90deg, var(--fondo-light-sec), var(--fondo-light-pri), var(--fondo-light-sec));
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--sombra-light);
+}
+
+@media screen and (max-width:1100px) {
+    footer ul{
+        flex-direction: row;
+        width: initial;
+        gap: 25px;
     }
-    section{
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    i{
+        font-size: 35px;
     }
+    .img-proy{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    footer ul{
+        gap: 10px;
+    }
+    i{
+        font-size: 20px;
+    }
+    .img-proy{
+        width: 100%;
+    }}
+
+/* DARK */
+
+.dark .luna{
+    display: none;
+}
+
+.dark .sol{
+    display: initial;
+}
+
+.dark{
+    background-color: var(--fondo-dark-pri);
+    color: var(--texto-dark-pri);
+}
+
+.dark header a{
+    color: var(--texto-dark-pri) !important;
+}
+
+.dark header button.navbar-toggler{
+    background-color: var(--texto-dark-sec) !important;
+}
+
+.dark header nav{
+    background: linear-gradient(0, var(--fondo-dark-pri), var(--fondo-dark-sec));
+}
+
+.dark header a:hover{
+    color: var(--texto-dark-sec) !important;
+    text-shadow: 1px 1px 10px var(--sombra-dark);
+}
+
+.dark section{
+    color: var(--texto-dark-pri);
+}
+
+.dark section .card{
+    background-color: var(--fondo-dark-pri);
+    color: var(--texto-dark-pri);
+}
+
+.dark footer a, .sol{
+    color: var(--texto-dark-pri);
+}
+
+.dark footer a:hover, .sol:hover{
+    color: var(--texto-dark-sec) !important;
+    text-shadow: 0px 0px 15px var(--sombra-dark);
+}
+.dark footer ul{
+    background-color: var(--fondo-dark-sec);
+    background: linear-gradient(90deg, var(--fondo-dark-sec), var(--fondo-dark-pri), var(--fondo-dark-sec));
+    box-shadow: 0 0 15px var(--sombra-dark);
+}
+
+.dark .btn{
+    color: var(--texto-dark-pri);
 }
